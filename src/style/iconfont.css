@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'ele';
+  src: url('https://static11.elemecdn.com/eleme/desktop/media/font/eleme.9e165a.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*
+.icon-github4:before {
+  content: "\e903";
+}
+*/
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'ele';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-credit:before {
+  content: "\e91d";
+}
+
+.icon-service:before {
+  content: "\e94a";
+}
+
+.icon-app:before {
+  content: "\e92e";
+}
+
+.icon-account:before {
+  content: "\e945";
+}
+.icon-search:before{
+  content: "\e949";
+}
+
+.icon-down:before {
+  content: "\e904";
+}
+
+.icon-up:before {
+  content: "\e906";
+}
+
+.icon-logo:before {
+  content: '\e92c';
+}
+
+.icon-stars:before {
+  content: "\e950\e950\e950\e950\e950";
+}
+
+.icon-shoppingcart:before {
+  content: "\e908";
+}
+
+.icon-order:before {
+  content: "\e93c";
+}
+
+.icon-mail:before {
+  content: "\e92f";
+}
+
+.icon-history:before {
+  content: "\e920";
+}
+
+.icon-qr:before {
+  content: "\e946";
+}
+
+.icon-service:before {
+  content: "\e94a";
+}
+.icon-backTop:before{
+  content: "\e951";;
+}

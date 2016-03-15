@@ -1,0 +1,50 @@
+div#list.clear-fix
+  each item, i in listItems
+    a.shoper-item.pull-left
+      div.pic-wrapper.pull-left
+        div.pic
+          img(src='#{item.imagePath}')
+        div.time-text #{item.order_lead_time}分钟
+      div.desc.pull-right
+        div.title #{item.name}
+        div.score
+          div.stars
+            i.icon.icon-stars
+            span.lightStars(style='width:#{item.rating*20}%')
+              i.icon.icon-stars
+          div.sales 月售#{item.recent_order_num}单
+        div.info #{item.minimum_free_delivery_amount}元起送 / 配送费#{item.delivery_fee}元
+        div.icons
+          if(item.is_premium)
+            i.text-icon.jian 减
+          if(item.is_new)
+            i.text-icon.shou 首
+          if(item.is_support_invoice)
+            i.text-icon.piao 票
+          if(item.is_online_payment)
+            i.text-icon.fu 付
+          if(item.is_insurance)
+            i.text-icon.bao 保
+      div.popup.hide
+        div.relative
+          div.triangle-border
+          div.triangle
+        div.padding
+          div.desc-title #{item.name}
+          ul.spec
+            for info in item.supports
+              li.clear-fix
+                div.pull-left
+                  i.text-icon(class='#{info.icon_name}') #{info.icon_text}
+                div.spec-desc #{info.description}
+          div.tabs
+            div.tab
+              span.red #{item.minimum_free_delivery_amount}
+              |元起送
+            div.tab 配送费
+              span.red #{item.delivery_fee}
+              |元
+            div.tab 平均
+              span.red #{item.order_lead_time}
+              |分钟
+          div.desc #{item.description}

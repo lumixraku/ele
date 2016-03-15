@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans;
+  color: #666;
+}
+*{
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input{
+  outline: 0;
+  border:0;
+}
+
+.relative {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+.fix{
+  position: fixed;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.clear-fix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.red {
+  color: red;
+}
+
+.table {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/*text icon */
+
+.text-icon {
+  font-style: normal;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid;
+  display: inline-block;
+  margin-left: 3px;
+  &.jian {
+    background: #f07373;
+    border-color: #f07373;
+    color: white;
+  }
+  &.shou {
+    background: #70bc46;
+    border-color: #70bc46;
+    color: white;
+  }
+  &.piao {
+    color: #9071CB;
+  }
+  &.bao {
+    color: #4B9A18;
+  }
+  &.fu {
+    color: #FF4E00;
+  }
+}
+
+@define-mixin triangleL $height,$width,$color{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $height $width $height 0;
+  border-color: transparent $color transparent transparent;
+}
+
+@define-mixin triangleR $height,$width,$color{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $height 0 $height $width;
+  border-color: transparent transparent transparent $color;
+}

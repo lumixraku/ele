@@ -1,0 +1,27 @@
+@import 'base.css';
+@import 'iconfont.css';
+@import 'variable.css';
+@import 'header.css';
+@import 'location.css';
+@import 'banner.css';
+@import 'filter.css';
+@import 'list.css';
+@import 'footer.css';
+@import 'sidebar.css';
+#page{
+  padding: 0 35px 0 0;
+  min-width: 960px;
+}
+#content{
+  margin: 0 auto;
+}
+@media (max-width: $wider-width) {
+  #content {
+    width: $standard-width;
+  }
+}
+@media (min-width: $wider-width) {
+  #content {
+    width: $wider-width;
+  }
+}

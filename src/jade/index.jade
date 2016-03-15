@@ -1,0 +1,32 @@
+extends ./layout.jade
+
+block title
+  title ele
+
+block style
+  link(rel='stylesheet', href='css/index.css')
+  script(src='js/helper.js')
+  <!--[if IE 8]>
+  link(href='/ie.js')
+  <![endif]-->
+
+block header
+  include ./header.jade
+
+block location
+  include ./location.jade
+
+block banner
+  include ./banner.jade
+
+block filter
+  include ./filter.jade
+
+block list
+  include ./list.jade
+
+block footer
+  include ./footer.jade
+
+block sidebar
+  include ./sidebar.jade

@@ -1,0 +1,51 @@
+/*@import 'variable.css';*/
+
+#nav {
+  height: $header-height;
+  font-size: $normal-font;
+  background: $blue;
+  padding: 0 20px;
+}
+
+.menu-item {
+  float: left;
+  height: 100%;
+  line-height: 60px;
+  color: white;
+  width: 110px;
+  text-align: center;
+  cursor: pointer;
+  &.icon.icon-logo {
+    color:white;
+    width: 130px;
+    text-align: left;
+    font-size: 32px;
+    -webkit-font-smoothing: antialiased;
+  }
+  &.active {
+    background-color: $active-blue;
+  }
+  /**/
+  &.icon {
+    font-size: 0;
+    height: $header-height;
+    color: #d2e7f9;
+    &:hover {
+      color: white;
+    }
+    i {
+      width: 30px;
+      display: inline-block;
+      font-size: $normal-font;
+    }
+    span {
+      font-size: $normal-font;
+    }
+  }
+}
+
+.pull-left .menu-item {
+  &:hover {
+    background: $hover-blue;
+  }
+}

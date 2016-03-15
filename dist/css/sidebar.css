@@ -1,0 +1,14 @@
+#sidebar{
+  width: 330px;
+  position: fixed;
+  right: -295px;
+  height: 100%;
+  top: 0;
+}
+
+.sidebtn-wrapper{
+  background: $grey;
+  height: 100%;
+  width: 35px;
+}
+/*# sourceMappingURL=sidebar.css.map */

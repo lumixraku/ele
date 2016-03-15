@@ -1,0 +1,24 @@
+doctype html
+<!--[if lte IE 8]>
+|<html lang="#{data_lang}" class="lte-ie8">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+|<html lang="#{data_lang}">
+<!--<![endif]-->
+head
+  meta(charset='utf-8')
+  block title
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  block style
+
+body
+  #page
+    block header
+    #content
+      block location
+      block banner
+      block filter
+      block list
+      block footer
+  block sidebar
+|</html>

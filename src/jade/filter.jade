@@ -1,0 +1,81 @@
+div#filter
+  div.main-tabs.clear-fix
+    div.tab.pull-left.active 外卖商家
+    div.tab.pull-left 附近的团购
+    div.tab.pull-left.full-tab
+  div.shoper-cate.clear-fix
+    div.title.pull-left
+      span 商家分类
+    div.categories
+      each cate, i in categories
+        if i==0
+          div.cate.active
+            span #{cate.name}
+        else if i==1
+          div.cate.red
+            span #{cate.name}
+        else
+          div.cate.menu
+            span #{cate.name}
+            if cate.more
+              div.cate-more.hide
+                each morecate, j in cate.more
+                  if j==0
+                    div.small-cate.acitve
+                      span #{morecate.name}
+                  else
+                    div.small-cate
+                      span #{morecate.name}
+      div.placeholder.hide
+  div.sorter.sticky.clear-fix
+    div.pull-left
+      div.sorter-items.clear-fix
+        div.pull-left.item.default.active 默认排序
+        div.pull-left.item.sales 销量高
+        div.pull-left.item.score 评价好
+        div.pull-left.item.menu.others
+          div.table
+            span 其他排序
+            i.icon.icon-down
+            ul.list.hide
+              li 距离最近
+              li 配送速度
+              li 配送金额
+        div.pull-left.item.menu.price
+          div.table
+            span 起送价格
+            span.selected 不限
+            i.icon.icon-down
+            ul.list.hide
+              li.active 不限
+              li 15元以下
+              li 20元以下
+              li 30元以下
+              li 40元以下
+    div.pull-right
+      div.filter-items
+        label.filter-item
+          input(type='checkbox')
+          新开商家
+        label.filter-item
+          input(type='checkbox')
+          免配送费
+        label.filter-item
+          input(type='checkbox')
+          饿配送
+        label.filter-item
+          input(type='checkbox')
+          可开发票
+        label.filter-item
+          input(type='checkbox')
+          在线支付
+
+div#nearby
+  想吃点好的, 看看附近
+  span 161 家
+  品牌商家吧
+  a(href='') 立即查看
+//
+  {"categories":[{"name":"xxx","more":[{"name":"111"}]}]}
+//
+

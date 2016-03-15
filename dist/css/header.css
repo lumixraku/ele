@@ -1,0 +1,78 @@
+/*@import 'variable.css';*/
+
+#nav {
+  height: $header-height;
+  font-size: $normal-font;
+  background: $blue;
+  padding: 0 20px;
+}
+
+.menu-item {
+  float: left;
+  height: 100%;
+  line-height: 60px;
+  color: white;
+  width: 110px;
+  text-align: center;
+  cursor: pointer
+  /**/
+}
+
+.menu-item.icon.icon-logo {
+  color: white;
+  width: 130px;
+  text-align: left;
+  font-size: 32px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.menu-item.active {
+  background-color: $active-blue;
+}
+
+.menu-item.icon {
+  font-size: 0;
+  height: $header-height;
+  color: #d2e7f9;
+}
+
+.menu-item.icon i {
+  width: 30px;
+  display: inline-block;
+  font-size: $normal-font;
+}
+
+.menu-item.icon span {
+  font-size: $normal-font;
+}
+
+.menu-item.icon:hover {
+  color: white;
+}
+
+.pull-left .menu-item {
+}
+
+.pull-left .menu-item:hover {
+  background: $hover-blue;
+}
+
+#location {
+  font-size: $small-font;
+  padding: $small-padding;
+}
+
+#location .title {
+  color: $grey;
+}
+
+#location a {
+  margin: 0 0 0 $small-padding;
+  text-decoration: none
+}
+
+#location a.switch {
+  color: $blue;
+}
+
+/*# sourceMappingURL=header.css.map */

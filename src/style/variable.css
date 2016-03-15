@@ -1,0 +1,36 @@
+$wider-width: 1180px;
+$standard-width: 960px;
+
+$small-font:12px;
+$litte-small-font:14px;
+$normal-font:16px;
+$big-font:20px;
+
+$blue:#1e89e0;
+$active-blue:#006bc7;
+$hover-blue:#0c77d1;
+$light-blue:#26a2ff;
+
+$white:#eee;
+$pale-white:#f5f5f5;
+$white-grey:#e0e0e0;
+$dark-white: #ccc;
+$light-grey:#999;
+$grey:#666;
+$dark-grey:#333;
+
+/*header*/
+$header-height: 60px;
+$small-padding:20px;
+
+
+/*banner*/
+$banner-height: 100px;
+
+/*filter*/
+$border-width:3px;
+$cate-height: 46px;
+$sorter-height:46px;
+
+/*list*/
+$img-size:70px;

@@ -1,0 +1,51 @@
+#location {
+  height: 46px;
+  line-height: 46px;
+  margin: 10px 0;
+  font-size: $small-font;
+  .title {
+    color: $grey;
+  }
+  a {
+    margin: 0 0 0 $small-padding;
+    text-decoration: none;
+    &.switch {
+      color: $blue;
+    }
+  }
+}
+
+#search {
+  border: 1px solid $dark-white;
+  background-color: white;
+  .table {
+    height: 35px;
+    line-height: normal;
+    padding: 0 10px;
+  }
+  input {
+    font-size: $litte-small-font;
+    border: none;
+    height: 24px;
+    width: 200px;
+    vertical-align: middle;
+    transition: width .3s ease-in-out;
+
+    &:focus {
+      width: 230px;
+    }
+  }
+  .icon {
+    vertical-align: middle;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    font-size: 20px;
+    &:hover {
+      color: $active-blue;
+    }
+  }
+  &.fix {
+    top: 4px;
+  }
+}
